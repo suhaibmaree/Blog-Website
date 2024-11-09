@@ -1,0 +1,128 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2c3e50; /* Dark blue-gray text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ecf0f1; /* Light background for contrast */
+}
+
+/* Details card container styling */
+.details-card {
+    background-color: #ffffff; /* White card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header styling within details card */
+.postpage-header {
+    background-color: #34495e; /* Dark blue-gray background */
+    color: #ffffff; /* White text */
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+/* Author info section */
+.auth-info {
+    margin-bottom: 20px;
+}
+
+.auth-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #16a085; /* Teal for name */
+}
+
+.auth-info h3 {
+    font-size: 1.2em;
+    color: #3498db; /* Bright blue */
+    margin-bottom: 8px;
+}
+
+.auth-info figure {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.auth-info img {
+    width: 100px; /* Fixed size for avatar */
+    height: auto;
+    border-radius: 50%; /* Circular avatar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: 10px;
+}
+
+.auth-info figcaption {
+    font-size: 0.9em;
+    color: #555; /* Medium gray */
+    margin-top: 5px;
+}
+
+/* Social sharing section */
+.social-info {
+    margin-top: 20px;
+}
+
+.social-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.social-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-info li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-info a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-info a:hover {
+    color: #1a6a9e; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .postpage-header {
+        font-size: 1.2em; /* Smaller font for header */
+    }
+
+    .auth-info h2 {
+        font-size: 1.5em; /* Reduce name font size */
+    }
+
+    .auth-info h3 {
+        font-size: 1em; /* Reduce font size for titles */
+    }
+
+    .auth-info img {
+        width: 80px; /* Smaller avatar on mobile */
+    }
+
+    .social-info h3 {
+        font-size: 1em; /* Smaller font for social info title */
+    }
+}

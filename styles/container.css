@@ -1,65 +1,75 @@
-.body{
-    width: 100%;
-}
-
-/*Mobile screen*/
+/* Base styles for the container */
 .container {
     display: grid;
-    height: 90vh;
-    grid-template-columns: 850px;
-    grid-template-rows: 250px 1fr 1fr;
     grid-template-areas:
         "hd"
         "sd"
         "main"
         "ft";
+    gap: 5px;
+    padding: 20px;
 }
 
-.box {
-    border: 1px solid red;
-    background: rgb(250, 250, 250);
-}
-
+/* Grid area assignments */
 .header {
     grid-area: hd;
+    background-color: #2c3e50; /* Dark blue-gray for header */
+    color: #ffffff;
 }
 
-.sidebar{
+.sidebar {
     grid-area: sd;
+    background-color: #34495e; /* Medium dark blue for sidebar */
+    color: #ecf0f1;
+    padding: 15px;
 }
 
-.content{
+.content {
     grid-area: main;
+    color: #2c3e50;
 }
 
-.footer{
+.footer {
     grid-area: ft;
+    background-color: #2c3e50; /* Dark blue-gray to match header */
+    color: #ecf0f1;
 }
 
-/*Mediom screen*/
-@media(min-width: 600px) and (max-width: 1100px){
-    .container{
-        display: grid;
-        width: 90%;
-        height: 90vh;
-        margin: auto;
-        grid-template-columns: 30px 300px 300px;
-        grid-template-rows: 250px 600px;
+/* Mobile screens (up to 599px) */
+@media (max-width: 599px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
         grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "sd sd main main main main main main"
-            "ft ft ft ft ft ft ft ft";
-        border: 5px solid aquamarine;
+            "hd"
+            "sd"
+            "main"
+            "ft";
     }
 }
 
-/*Larg screen*/
-@media(min-width: 1100px){
-    .container{
+/* Medium screens (600px to 1099px) */
+@media (min-width: 600px) and (max-width: 1099px) {
+    .container {
+        grid-template-columns: 250px 1fr; /* Fixed width for sidebar */
+        grid-template-rows: auto 1fr auto;
         grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "sd sd sd sd main main main main"
-            "ft ft ft ft ft ft ft ft";
-        border: 5px solid blue;
+            "hd hd"
+            "sd main"
+            "ft ft";
+    }
+}
+
+/* Large screens (1100px and above) */
+@media (min-width: 1100px) {
+    .container {
+        grid-template-columns: 300px 1fr; /* Sidebar at 300px, content fills remaining space */
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "hd hd"
+            "sd main"
+            "ft ft";
+        width: 90%;
+        margin: 0 auto;
     }
 }

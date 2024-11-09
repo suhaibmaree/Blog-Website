@@ -1,1 +1,7 @@
-@import url("container.css");
+@import url(container.css);
+@import url(home-page.css);
+@import url(card.css);
+@import url(footer.css);
+@import url(header.css);
+@import url(nav.css);
+@import url(post-page.css);
