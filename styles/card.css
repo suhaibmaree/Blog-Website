@@ -27,8 +27,10 @@
     color: #2c3e50; /* Dark blue-gray for title */
 }
 
-.card .card-text {
-    color: #555; /* Medium gray for readability */
-    font-size: 0.9em;
-    line-height: 1.5;
+.card blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding-left: 15px;
+    border-left: 4px solid #3498db; /* Blue border for visual effect */
 }
