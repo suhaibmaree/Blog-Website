@@ -123,6 +123,18 @@ body {
     background-color: #1a6a9e; /* Darker blue on hover */
 }
 
+/* Blockquote styling */
+.auth-info blockquote {
+    font-style: italic;
+    color: #555; /* Medium gray text color */
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-left: 4px solid #3498db; /* Blue left border */
+    background-color: #f9f9f9; /* Light background to make it stand out */
+    border-radius: 5px;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .postpage-header {
