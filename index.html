@@ -4,23 +4,103 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/index.css"/>
-
-        <title>Personal blog</title>
+        <title>Blog homepage</title>
     </head>
-    <body class="body">
+    <body>
         <div class="container">
-            <div class="header box">
-                <h1>My personal blog</h1>
+            <header class="header">
+                <div class="header-container">
+                    <div class="logo">
+                        <a href="#">Logo</a>
+                    </div>
+                    <nav class="nav-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#categories">Categories</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                    <div class="search-bar">
+                        <label>
+                            <input type="text" placeholder="Search...">
+                        </label>
+                    </div>
+                </div>
+            </header>
+            <nav class="sidebar">
+                <ul>
+                    <li>
+                        <h3><a href="">Posts</a></h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3><a href="">Authers</a></h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3><a href="">News</a></h3>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+
+                <div class="card">
+                    <div class="card-title"><i>First card</i></div>
+                    <figure>
+                        <img src="assets/images/animal.avif" alt="post image">
+                        <figcaption>image caption</figcaption>
+                    </figure>
+                    <p class="card-text">Card Text</p>
+                    <a href="pages/post-page.html"><button><b>click</b> here for post</button></a>
+                </div>
+
+                <div class="card">
+                    <div class="card-title"><i>Second card</i></div>
+                    <figure>
+                        <img src="assets/images/animal.avif" alt="post image">
+                        <figcaption>image caption</figcaption>
+                    </figure>
+                    <p class="card-text">Card Text</p>
+                    <a href="pages/post-page.html"><button><b>click</b> here for post</button></a>
+                </div>
+
+                <div class="card">
+                    <div class="card-title"><i>Third card</i></div>
+                    <figure>
+                        <img src="assets/images/animal.avif" alt="post image">
+                        <figcaption>image caption</figcaption>
+                    </figure>
+                    <p class="card-text">Card Text</p>
+                    <a href="pages/post-page.html"><button><b>click</b> here for post</button></a>
+                </div>
+
             </div>
-            <div class="sidebar box">
-                <h1>Blog post</h1>
-                <a href="items.html"> post</a>
-            </div>
-            <div class="content box">
-            </div>
-            <div class="footer box">
-                Footer
-            </div>
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2024 Suhaib Maree. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About Us</a> |
+                    <a href="#services">Services</a> |
+                    <a href="#contact">Contact</a> |
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
