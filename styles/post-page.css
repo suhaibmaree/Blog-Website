@@ -104,6 +104,25 @@ body {
     color: #1a6a9e; /* Darker blue on hover */
 }
 
+/* Go Back Button Styling */
+.go-back-btn {
+    display: inline-block;
+    background-color: #3498db; /* Bright blue background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.go-back-btn:hover {
+    background-color: #1a6a9e; /* Darker blue on hover */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .postpage-header {
